@@ -1,0 +1,13 @@
+name:welcome workflow
+on: [push,pull_request]
+job:
+   welcome
+   runs on:ubantu-latest
+   steps:
+      -name:Checkout-repository
+      -uses:actions/checkout@v2
+
+      -name:Print welcome message
+      -run:echo  "welcome  to the github actions workflow!"
+      
+   
